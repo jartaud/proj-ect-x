@@ -96,7 +96,8 @@
                                     <p>Explain how you would make a copy of our production codebase so that you can begin developing a new feature from a project plan and how you would share your work with the world as production software.  Please use exact commands for starting your work, preparing for review, and getting it deployed.</p>
                                     <p>
                                         <ol>
-                                            <li>git clone https://acme.com/organization/codebase</li>
+                                            <li>You'd add my public ssh key because it'd less cumbersome and more secure than manually entering a username/password</li>
+                                            <li>and then I'd git clone https://acme.com/organization/codebase</li>
                                             <li>or git clone --single-branch --branch clone my-specific-branch</li>
                                             <li>after modifiying stuff, I'd git add . && git commit -m "comment to explain my commit"</li>
                                         </ol>
