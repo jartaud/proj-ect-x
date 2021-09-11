@@ -98,7 +98,7 @@
                                         <ol>
                                             <li>git clone https://acme.com/organization/codebase</li>
                                             <li>or git clone --single-branch --branch clone my-specific-branch</li>
-                                            <li>after modifiying stuff, I'd git add . && git commit -am "comment to explain my commit"</li>
+                                            <li>after modifiying stuff, I'd git add . && git commit -m "comment to explain my commit"</li>
                                         </ol>
                                     </p>
                                 </div>
