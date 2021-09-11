@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Question 3</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
             <h3>
                 Using raw query (stdClass)
                 <span>
-                    <a href="http://sqlfiddle.com/#!17/f6c27/2" target="_blank" rel="noopener noreferrer">SQLFiddle</a>
+                    <a href="http://sqlfiddle.com/#!17/f6c27/2/1" target="_blank" rel="noopener noreferrer">SQLFiddle</a>
                 </span>
             </h3>
         </div>
