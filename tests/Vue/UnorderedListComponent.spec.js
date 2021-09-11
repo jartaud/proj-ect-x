@@ -12,7 +12,7 @@ describe('UnorderedListComponent.vue', () => {
     it('counts "five" (orange)', () => {
         const wrapper = mount(UnorderedListComponent);
 
-        expect(wrapper.findAll('.orangify').length).toBe(6)
+        expect(wrapper.findAll('.orangify').length).toBe(20)
     })
 
     it('counts "three and five" (red)', () => {

@@ -3,8 +3,8 @@
       <ul>
           <template v-for="(d, index) in ulData">
               <li v-if="d % 3 === 0" :class="{greenify: d % 3 === 0}"> {{d}} -> three</li>
-              <li v-if="d % 5 === 0" :class="{orangify: d % 3 === 0}"> {{d}} -> five</li>
-              <li v-if="d % 3 === 0 && d % 5 === 0" :class="{redify: d % 3 === 0}"> {{d}} -> three and five</li>
+              <li v-if="d % 5 === 0" :class="{orangify: d % 5 === 0}"> {{d}} -> five</li>
+              <li v-if="d % 3 === 0 && d % 5 === 0" :class="{redify: d % 3 === 0 && d % 5 === 0}"> {{d}} -> three and five</li>
           </template>
       </ul>
   </div>
@@ -25,7 +25,7 @@ export default {
 
 <style>
     .container{
-        padding-top: 200px;
+        padding-top: 550px;
     }
 
     .greenify{color: green}
