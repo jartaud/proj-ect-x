@@ -13,11 +13,6 @@
 <script>
 import range from "lodash/range";
 export default {
-    data() {
-        return {
-
-        }
-    },
     computed: {
         ulData() {
             return range(3,104)
