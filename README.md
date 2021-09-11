@@ -17,6 +17,12 @@ Make sure you have PHP 7.3 or 8.0 installed and composer 2.
 The app dockerized as well.
 
 
-## Testing
+## Testing (Laravel)
 
 php artisan test
+
+
+## Testing (Vue)
+
+- npm install
+- npm run test
