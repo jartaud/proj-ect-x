@@ -16,7 +16,7 @@ export default {
     computed: {
         ulData() {
             return range(3,104)
-                .filter((v) => v%3 === 0 || v%5 ===5 )
+                .filter((v) => v%3 === 0 || v%5 === 0 )
                 
         }
     }
