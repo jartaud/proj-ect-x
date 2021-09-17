@@ -52,10 +52,6 @@ Route::group(['prefix' => 'frumbledingle'], function () {
     Route::get('categories', [CategoryController::class, 'index'])
         ->name('frumbledingle.categories');
 
-    Route::get('report', function () {
-        return view('report');
-    })->name('frumbledingle.report');
-
     Route::get('report', [ReportController::class, 'index'])
         ->name('frumbledingle.report');
     Route::get('report-pdf', [ReportController::class, 'pdf'])

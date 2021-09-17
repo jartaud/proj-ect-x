@@ -10,7 +10,7 @@ class ReportController extends Controller
 {
     public function index()
     {
-        return view('report');
+        return view('frumbledingle.report');
     }
 
     public function pdf()

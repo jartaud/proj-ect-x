@@ -12,6 +12,11 @@ class ReportTest extends TestCase
     public function test_report_page_is_rendered()
     {
         $this->get(route('frumbledingle.report'))
+            ->assertOk()
+            ->assertSee('Report')
+            ->assertSee('report-table');
+
+        $this->get(route('frumbledingle.report'))
             ->assertSee('report-table');
     }
 }
