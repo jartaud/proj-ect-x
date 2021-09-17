@@ -74,7 +74,7 @@ export default {
     methods: {
         async getLocations(page = 1) {
             try {
-                const response = await axios.get(`/api/locations?page=${page}`);
+                const response = await axios.get(`/api/frumbledingle/locations?page=${page}`);
                 this.locations = response.data;
             } catch(data) {
                 return console.error(data);
@@ -85,7 +85,7 @@ export default {
             this.errors = {}
             this.creating = true
             try {
-                await axios.post('/api/locations', { name: this.newLocationName });
+                await axios.post('/api/frumbledingle/locations', { name: this.newLocationName });
                 await this.getLocations();
                 this.creating = false
                 return this.newLocationName='';
@@ -104,7 +104,7 @@ export default {
             this.deleting = true;
 
             try {
-                await axios.post(`/api/locations/${id}`, { _method: 'DELETE' });
+                await axios.post(`/api/frumbledingle/locations/${id}`, { _method: 'DELETE' });
                 this.getLocations();
                 this.deleting=false;
                 this.deletingIds=[];

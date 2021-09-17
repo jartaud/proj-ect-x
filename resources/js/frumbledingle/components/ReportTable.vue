@@ -65,7 +65,7 @@ export default {
             this.searching = true
             try {
                 const price = this.price || 0
-                const response = await axios.get(`/api/report?price=${price}`);
+                const response = await axios.get(`/api/frumbledingle/report?price=${price}`);
                 this.reportData = response.data;
                 this.searching = false
             } catch({response}) {

@@ -177,7 +177,7 @@ export default {
 
         async getItems(page = 1) {
             try {
-                let url = `/api/items?page=${page}`
+                let url = `/api/frumbledingle/items?page=${page}`
 
                 if (this.location_filter) url += `&location=${this.location_filter}`
 
@@ -192,7 +192,7 @@ export default {
             this.errors = {}
             this.saving = true
             try {
-                await axios.post('/api/items', this.form);
+                await axios.post('/api/frumbledingle/items', this.form);
                 await this.getItems();
                 this.creating = false
                 this.saving = false
@@ -217,7 +217,7 @@ export default {
             this.deleting = true;
 
             try {
-                await axios.post(`/api/items/${id}`, { _method: 'DELETE' });
+                await axios.post(`/api/frumbledingle/items/${id}`, { _method: 'DELETE' });
                 this.getItems();
                 this.deleting = false;
                 this.deletingIds = [];
