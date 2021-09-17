@@ -16,3 +16,6 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         //
     ]);
+
+mix.js('resources/js/frumbledingle/app.js', 'public/js/frumbledingle')
+    .vue();
